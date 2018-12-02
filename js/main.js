@@ -90,12 +90,11 @@ var firstCard = listData[0];
 var getCreateCards = function () {
   elementCard.querySelector('.popup__title').textContent = firstCard.offer.title;
   elementCard.querySelector('.popup__text--price').textContent = firstCard.offer.price + '₽/ночь';
-  elementCard.querySelector('.popup__type').textContent = firstCard.offer.address;
+  elementCard.querySelector('.popup__type').textContent = firstCard.offer.type;
   elementCard.querySelector('.popup__text--capacity').textContent = firstCard.offer.rooms + ' комнаты' + ' для ' + firstCard.offer.guests + ' гостей';
   elementCard.querySelector('.popup__text--time').textContent = 'Заезд ' + ' после ' + firstCard.offer.checkin + ' , ' + ' выезд ' + ' до ' + firstCard.offer.checkout;
   elementCard.querySelector('.popup__description').textContent = firstCard.offer.description;
   elementCard.querySelector('.popup__feature').textContent = firstCard.offer.features;
-  elementCard.querySelector('.popup__text--address').textContent = firstCard.offer.address;
 
   var popapPhotos = elementCard.querySelector('.popup__photos');
   var popapPhoto = elementCard.querySelector('.popup__photo');
